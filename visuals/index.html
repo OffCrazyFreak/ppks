@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./favicon.ico" />
+
+    <title>PPKS</title>
+
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/board.css" rel="stylesheet" />
+
+    <script src="./js/libraries/particles.js" defer></script>
+
+    <script src="./js/index.js" defer></script>
+    <script src="./js/board.js" defer></script>
+    <script src="./js/debugView.js" defer></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="winner_container">
+      <button class="close-btn" aria-label="Close winner modal">×</button>
+      <div>
+        <h2>WINNER</h2>
+        <h1>LOREM IPSUM</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="info">
+        <div class="left_container team_info">
+          <h2 class="team_name">Team one name</h2>
+          <h3 class="team_score">Score: ####</h3>
+          <h3 class="team_length">Length: ####</h3>
+
+          <h4 class="team_last-move">Last move: ####</h4>
+
+          <div class="items">
+            <img
+              src="./img/sprites/items/goldenApple.png"
+              alt="Golden apple"
+              class="item"
+              data-value="golden-apple"
+            />
+
+            <img
+              src="./img/sprites/items/katana.png"
+              alt="Katana"
+              class="item"
+              data-value="katana"
+            />
+
+            <img
+              src="./img/sprites/items/armour.png"
+              alt="Armour"
+              class="item"
+              data-value="armour"
+            />
+
+            <img
+              src="./img/sprites/items/tron.png"
+              alt="Tron"
+              class="item"
+              data-value="tron"
+            />
+
+            <img
+              src="./img/sprites/items/leap.png"
+              alt="Leap"
+              class="item"
+              data-value="leap"
+            />
+
+            <img
+              src="./img/sprites/items/freeze.png"
+              alt="Freeze"
+              class="item"
+              data-value="freeze"
+            />
+          </div>
+
+          <div class="debug-only">
+            <button onclick="connectPlayer(1)">Connect manually (WASD)</button>
+          </div>
+        </div>
+
+        <div class="middle_container">
+          <h1>
+            <span>PPKS</span>
+          </h1>
+          <h3 class="move_number">Move: ####</h3>
+
+          <div class="debug-only">
+            <h3 class="connection_status"></h3>
+          </div>
+        </div>
+
+        <div class="right_container team_info">
+          <h2 class="team_name">Team two name</h2>
+          <h3 class="team_score">Score: ####</h3>
+          <h3 class="team_length">Length: ####</h3>
+
+          <h4 class="team_last-move">Last move: ####</h4>
+
+          <div class="items">
+            <img
+              src="./img/sprites/items/goldenApple.png"
+              alt="Golden apple"
+              class="item"
+              data-value="golden-apple"
+            />
+
+            <img
+              src="./img/sprites/items/katana.png"
+              alt="Katana"
+              class="item"
+              data-value="katana"
+            />
+
+            <img
+              src="./img/sprites/items/armour.png"
+              alt="Armour"
+              class="item"
+              data-value="armour"
+            />
+
+            <img
+              src="./img/sprites/items/tron.png"
+              alt="Tron"
+              class="item"
+              data-value="tron"
+            />
+
+            <img
+              src="./img/sprites/items/leap.png"
+              alt="Leap"
+              class="item"
+              data-value="leap"
+            />
+
+            <img
+              src="./img/sprites/items/freeze.png"
+              alt="Freeze"
+              class="item"
+              data-value="freeze"
+            />
+          </div>
+
+          <div class="debug-only">
+            <button onclick="connectPlayer(2)">
+              Connect manually (arrow keys)
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="board">
+        <div id="gameBoard" class="game-grid"></div>
+      </div>
+    </div>
+  </body>
+</html>
